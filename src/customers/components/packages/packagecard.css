@@ -1,0 +1,11 @@
+.packageCard .textPart{
+    transition: transform .3s ease-out;
+}
+
+.packageCard:hover{
+    box-shadow:rgba(0, 0, 0, 0.85) 0px 5px 15px;;
+}
+
+.packageCard{
+    border-radius: 15px;
+}
