@@ -1,0 +1,43 @@
+export const profileData = [
+    {
+        imageURL:require("../images/profiles/profile1.jpg"),
+        status:"Uncustomized",
+        name:"Profile1"
+    },
+    {
+        imageURL:require("../images/profiles/profile2.jpg"),
+        status:"Uncustomized",
+        name:"Profile2"
+    },
+    {
+        imageURL:require("../images/profiles/profile3.jpg"),
+        status:"Uncustomized",
+        name:"Profile3"
+    },
+    {
+        imageURL:require("../images/profiles/profile4.jpg"),
+        status:"Uncustomized",
+        name:"Profile4"
+    },
+    {
+        imageURL:require("../images/profiles/profile5.jpg"),
+        status:"Uncustomized",
+        name:"Profile5"
+    },
+    {
+        imageURL:require("../images/profiles/profile6.jpg"),
+        status:"Uncustomized",
+        name:"Profile6"
+    },
+    {
+        imageURL:require("../images/profiles/profile7.jpg"),
+        status:"Uncustomized",
+        name:"Profile7"
+    },
+    {
+        imageURL:require("../images/profiles/profile8.jpg"),
+        status:"Uncustomized",
+        name:"Profile8"
+    },
+    
+]
