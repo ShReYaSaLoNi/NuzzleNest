@@ -14,7 +14,7 @@ const navigation = {
   pages: [
     { name: 'Packages', href: '/packages' },
     { name: 'About', href: '#' },
-    { name: 'My Orders', href: '/account/order' },
+    { name: 'My Orders', href: '/orders/all' },
   ],
 }
 

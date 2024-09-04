@@ -1,4 +1,4 @@
-import { CREATE_ORDER_FAILURE, CREATE_ORDER_REQUEST, CREATE_ORDER_SUCCESS, GET_ORDER_BY_ID_FAILURE, GET_ORDER_BY_ID_SUCCESS , GET_ORDER_BY_ID_REQUEST} from "./actiontype"
+import { CREATE_ORDER_FAILURE, CREATE_ORDER_REQUEST, CREATE_ORDER_SUCCESS, GET_ORDER_BY_ID_FAILURE, GET_ORDER_BY_ID_SUCCESS , GET_ORDER_BY_ID_REQUEST, GET_ORDER_FAILURE, GET_ORDER_REQUEST, GET_ORDER_SUCCESS} from "./actiontype"
 import { api } from "../../config/apiconfig"
 
 
@@ -61,5 +61,18 @@ export const getOrderById = (orderId) => async(dispatch) =>{
             type: GET_ORDER_BY_ID_FAILURE,
             payload: error.message
         })
+    }
+}
+
+export const getOrder =(reqData)=>async(dispatch)=>{
+    dispatch({type: GET_ORDER_REQUEST})
+
+    try{
+        const {data}=await api.get(`/api/orders/all/`)
+        console.log('orders: ', data);
+        dispatch({type: GET_ORDER_SUCCESS, payload:data})
+    }
+    catch(error){
+        dispatch({type: GET_ORDER_FAILURE, payload:error.message})
     }
 }

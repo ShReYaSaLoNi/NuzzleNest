@@ -9,7 +9,7 @@ const PackageCard = ({product})=>{
             <div className="h-[12rem]">
             <img className="object-cover object-left-top" src={product.imageURL} alt="" style={{padding:"15px 2px 2px 2px", width:250, height:200}} />
             </div>
-
+  
             <div className="textPart p-2 text-white" style={{backgroundColor:"#333A73"}}>
                 <div>
                     <p className="font-bold opacity-60">

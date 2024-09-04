@@ -41,6 +41,7 @@ async function getAllPackages(reqQuery){
     let {category,discount} = reqQuery;
 
     let query = Package.find();
+    //console.log(query);
 
     if(category) {
         const categorySet = new Set(category.split(",").map(category=>category.trim().toLowerCase()));

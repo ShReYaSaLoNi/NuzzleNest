@@ -124,7 +124,7 @@ export default function PackageDetails(){
                   <div className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
                     {product.specialists.map((person) => (
                       <RadioGroup.Option
-                        key={person.name}
+                        key={person.name}  
                         value={person}
                         disabled={!person.available}
                         className={({ active }) =>

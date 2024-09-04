@@ -24,9 +24,9 @@ const CustomerRouters = () =>{
                 <Route path="/packages" element={<PackageData/>}></Route> 
                 <Route path="/package/:packageId" element={<PackageDetails />}></Route>
                 <Route path="/checkout" element={<Checkout />}></Route>
-                <Route path="/account/order" element={<Order />}></Route>
-                <Route path="/account/order/:orderId" element={<OrderDetails />}></Route>
-      {/* <Order/> */}
+                <Route path="/orders/all" element={<Order />}></Route>
+                <Route path="/orders/:orderId" element={<OrderDetails />}></Route>
+      {/* <Order/> */}    
       {/* <OrderDetails /> */}
             </Routes>
             <div>

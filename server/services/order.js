@@ -123,7 +123,7 @@ async function getAllOrders(){
     .populate({path:'orderItems',populate:{path:'packages'}}).lean()
 }
 
-async function deleteOrder(orderId){
+async function deleteOrder(orderId){  
     const order = await findOrderById(orderId);
     await Order.findByIdAndDelete(order._id);
 }
